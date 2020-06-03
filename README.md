@@ -21,10 +21,10 @@ CSS changes made for Exceeds Expectations:
 - changed background color of the phrase buttons when they are still hidden
 - changed / set background color of the START button
 - set the text of the START button to be uppercase
-- changed text color of the PHRASE HUNTER header
-- added a shadow to the PHRASE HUNTER header
+- changed text color of the PHRASE HUNTER header in the game
+- added a shadow to the PHRASE HUNTER header in the game
 - changed background color of the phrase buttons that match the chosen letter
 - changed background color of the onscreen keyboard buttons that are correct
 - changed background color of the onscreen keyboard buttons that are incorrect
-- added a shadow to the 'PHRASE HUNTER' title on the start screen
+- added a shadow to the PHRASE HUNTER title on the start screen
 - changed overlay background color when game on the start screen
