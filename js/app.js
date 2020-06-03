@@ -8,6 +8,7 @@ app.js
  let game;
  const startGameButton = document.querySelector('#btn__reset');
  const keyboardDiv = document.querySelector('#qwerty');
+ const keysArray = document.querySelectorAll('.key');
  const overlayDiv = document.querySelector('#overlay');
 
 
@@ -15,17 +16,6 @@ app.js
  startGameButton.addEventListener('click', () => {
     game = new Game();
     game.startGame();
- });
-
- // Adds an event listener to the 'Start Game' button, 
- // which allows the user to press 'Enter' on the keyboard to create a new instance of the game.
- document.addEventListener("keyup", (e) => {
-   if (overlayDiv.style.display !== 'none') {
-     if (e.keyCode === 13) {
-       game = new Game();
-       game.startGame();
-     };
-   };
  });
 
  // Adds click event listeners to each of the onscreen keyboard buttons.
@@ -36,14 +26,22 @@ app.js
  });
 
 
- // Adds event listener for the keyboard, which allows player to use physical computer keyboard to enter guesses.
+ // Adds event listeners to physical keyboard keys and START GAME button.
  document.addEventListener('keyup', (e) => {
-   const keysArray = document.querySelectorAll('.key');
+   // Allows player to use physical computer keyboard to enter guesses.
    if (overlayDiv.style.display === 'none')
       keysArray.forEach(key => {
          if(key.textContent === e.key) {
             game.handleInteraction(key);
          };
       });
+   
+   // Allows the user to press 'Enter' on the keyboard to create a new instance of the game.   
+   if (overlayDiv.style.display !== 'none') {
+     if (e.keyCode === 13) {
+         game = new Game();
+         game.startGame();
+      };
+    };
  });
 

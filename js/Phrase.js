@@ -35,17 +35,17 @@ Phrase.js
     // Checks to see if the letter selected by the player matches a letter in the phrase.
     // @param {string} letter - letter to check
     checkLetter(letter) {
-        if(this.phrase.includes(`${letter}`)) {
+        if(this.phrase.includes(letter)) {
             return true;
         } else {
             return false;
         };
-    }; 
+    };
 
     // Reveals the letter(s) on the board that matches the player's selection.
     // @param {string} letter - selected letter to display
     showMatchedLetter(letter) {
-        const matchingListItems = document.getElementsByClassName(`${letter}`);
+        const matchingListItems = document.getElementsByClassName(letter);
         for (let i = 0; i < matchingListItems.length; i++) {
             let matchedLi = matchingListItems[i];
             matchedLi.classList.remove('hide');

@@ -8,18 +8,26 @@ Game.js
  class Game {
     constructor() {
         this.missed = 0;
-        this.phrases = [
-            {phrase: 'a fish out of water'}, 
-            {phrase: 'silence is golden'},
-            {phrase: 'two peas in a pod'},
-            {phrase: 'cool as a cucumber'},
-            {phrase: 'all bark and no bite'},
-        ];
+        this.phrases = this.createPhrases();
         this.activePhrase = 'null';
     };
 
+    // Creates phrases for use in the game
+    // @return {array} - array of phrases that could be used in the game
+    createPhrases() {
+        const phrases = []; 
+        const phrase1 = new Phrase('A fish out of water');
+ 		const phrase2 = new Phrase('Silence is golden');
+ 		const phrase3 = new Phrase('Two peas in a pod');
+ 		const phrase4 = new Phrase('Cool as a cucumber');
+ 		const phrase5 = new Phrase('All bark and no bite');
+         
+        phrases.push(phrase1, phrase2, phrase3, phrase4, phrase5);
+ 		return phrases;
+    };
+
     // Randomly selects a phrase from the phrases array.
-    // @return {object} phrase object chosen
+    // @return {object} - phrase object chosen
     getRandomPhrase() {
         const randomPhrase = this.phrases[Math.floor(Math.random() * this.phrases.length)];
         return randomPhrase;
@@ -30,8 +38,7 @@ Game.js
         const overlayDiv = document.querySelector('#overlay');
         overlayDiv.style.display = 'none';
 
-        const randomPhrase = this.getRandomPhrase();
-        this.activePhrase = new Phrase(randomPhrase.phrase);
+        this.activePhrase = this.getRandomPhrase();
         this.activePhrase.addPhraseToDisplay();
     }; 
 
@@ -59,11 +66,11 @@ Game.js
     };
 
     // Increases the value of the missed property, and removes a life from the scoreboard. 
-    // Also ends game once player is out of lives.
     removeLife() {
         const hearts = document.querySelectorAll('.tries img');
         hearts[this.missed].src = 'images/lostHeart.png';
         
+        // Also ends game once player is out of lives.
         this.missed += 1; 
         if(this.missed >= 5) {
             this.gameOver(false);
@@ -94,7 +101,7 @@ Game.js
             overlayDiv.classList.remove('lose');
             overlayDiv.classList.add('win');
         } else {
-            gameOverMsg.textContent = 'Sorry - you ran out lives. Try again next time!';
+            gameOverMsg.textContent = 'Sorry - you ran out of lives. Try again next time!';
             overlayDiv.classList.remove('start');
             overlayDiv.classList.remove('win');
             overlayDiv.classList.add('lose');
