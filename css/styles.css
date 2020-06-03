@@ -4,11 +4,11 @@
 /* Variables */
 
 :root {
-  --color-win: #467D4F; /*changed color here*/
-  --color-lose: #93AD90; /*changed color here*/
+  --color-win: #467D4F; /* changed color */
+  --color-lose: #93AD90; /* changed color */
   --color-start: #5b85b7;
   --color-neutral: #445069;
-  --color-neutral-light: #B0C0CC; /*changed color here*/
+  --color-neutral-light: #B0C0CC; /* changed color */
   --color-keys: #37474F;
   --color-keys-light: #E5E5E5;
   --font-size-large: 60px;
@@ -63,8 +63,8 @@ button {
 #btn__reset {
 	width: 200px;
   margin: 0 auto;
-  background-color:#FFFFFF; /*set color here*/
-  text-transform: uppercase; /*set text to uppercase here*/
+  background-color:#FFFFFF; /* set color */
+  text-transform: uppercase; /* set text to uppercase */
 }
 
 .main-container {
@@ -88,8 +88,8 @@ button {
 /* Title */
 
 .header {
-  color: #124775; /*changed color here*/
-  text-shadow: #B0C0CC 2px 2px 3px; /*added shadow here*/
+  color: #124775; /* changed color */
+  text-shadow: #B0C0CC 2px 2px 3px; /* added shadow */
 }
 
 
@@ -114,7 +114,7 @@ button {
 
 .show {
   color: #fff;
-  background-color: #307BAB; /*changed color here*/
+  background-color: #307BAB; /* changed color */
   font-size: 20px;
   height: 65px;
   width: 65px;
@@ -134,14 +134,14 @@ button {
 }
 
 .chosen {
-  background: #467D4F; /*changed color here*/
+  background: #467D4F; /* changed color */
   border-radius: 5px;
   font-size: var(--font-size-medium);
   color: #FFFFFF;
 }
 
 .wrong {
-  background: #93AD90; /*changed color here*/
+  background: #93AD90; /* changed color */
   color: #FFFFFF;
 }
 
@@ -179,11 +179,11 @@ button {
 
 .title {
   color: #FFF;
-  text-shadow: #B0C0CC 2px 2px 3px; /*added shadow here*/
+  text-shadow: #B0C0CC 2px 2px 3px; /* added shadow */
 }
 
 .start {
-  background-color: #124775; /*changed color here*/
+  background-color: #124775; /* changed color */
 }
 
 .start a {
@@ -199,7 +199,7 @@ button {
 }
 
 .lose {
-  background-color: #93AD90; /*changed color here*/
+  background-color: #93AD90; /* changed color */
 }
 
 .lose a {

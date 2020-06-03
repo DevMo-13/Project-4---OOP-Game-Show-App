@@ -9,8 +9,8 @@ Game.js
     constructor() {
         this.missed = 0;
         this.phrases = [
-            {phrase: 'actions speak louder than words'}, 
-            {phrase: 'home is where the heart is'},
+            {phrase: 'a fish out of water'}, 
+            {phrase: 'silence is golden'},
             {phrase: 'two peas in a pod'},
             {phrase: 'cool as a cucumber'},
             {phrase: 'all bark and no bite'},

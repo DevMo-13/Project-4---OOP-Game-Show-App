@@ -15,7 +15,8 @@ Game Rules:
 
 ---
 
-CSS changes made for Exceeds Expectations:
+HTML / CSS changes made for Exceeds Expectations:
+- updated img size of hearts
 - changed overlay background color when game is won
 - changed overlay background color when game is lost
 - changed background color of the phrase buttons when they are still hidden
