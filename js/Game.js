@@ -94,7 +94,7 @@ Game.js
             overlayDiv.classList.remove('lose');
             overlayDiv.classList.add('win');
         } else {
-            gameOverMsg.textContent = 'Sorry, you ran out lives. Try again next time!';
+            gameOverMsg.textContent = 'Sorry - you ran out lives. Try again next time!';
             overlayDiv.classList.remove('start');
             overlayDiv.classList.remove('win');
             overlayDiv.classList.add('lose');
