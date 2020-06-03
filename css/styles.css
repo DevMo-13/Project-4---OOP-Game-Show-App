@@ -5,7 +5,7 @@
 
 :root {
   --color-win: #467D4F; /*changed color here*/
-  --color-lose: #B0C0CC; /*changed color here*/
+  --color-lose: #93AD90; /*changed color here*/
   --color-start: #5b85b7;
   --color-neutral: #445069;
   --color-neutral-light: #B0C0CC; /*changed color here*/
@@ -141,7 +141,7 @@ button {
 }
 
 .wrong {
-  background: #ABCFEF; /*changed color here*/
+  background: #93AD90; /*changed color here*/
   color: #FFFFFF;
 }
 
@@ -199,7 +199,7 @@ button {
 }
 
 .lose {
-  background-color: #B0C0CC; /*changed color here*/
+  background-color: #93AD90; /*changed color here*/
 }
 
 .lose a {
