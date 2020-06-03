@@ -89,14 +89,14 @@ Game.js
         
         const gameOverMsg = document.querySelector('#game-over-message');
         if(gameWon) {
-            gameOverMsg.textContent = 'Congrats - you did it!'
+            gameOverMsg.textContent = 'Congrats - you did it! Try another one?';
             overlayDiv.classList.remove('start');
             overlayDiv.classList.remove('lose');
             overlayDiv.classList.add('win');
         } else {
-            gameOverMsg.textContent = 'Sorry, you ran out lives. Try again next time!'
+            gameOverMsg.textContent = 'Sorry, you ran out lives. Try again next time!';
             overlayDiv.classList.remove('start');
-            overlayDiv.classList.add('win');
+            overlayDiv.classList.remove('win');
             overlayDiv.classList.add('lose');
         };
 
