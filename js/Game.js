@@ -9,21 +9,22 @@ Game.js
     constructor() {
         this.missed = 0;
         this.phrases = this.createPhrases();
-        this.activePhrase = 'null';
+        this.activePhrase = null;
     };
 
     // Creates phrases for use in the game
     // @return {array} - array of phrases that could be used in the game
     createPhrases() {
-        const phrases = []; 
-        const phrase1 = new Phrase('A fish out of water');
- 		const phrase2 = new Phrase('Silence is golden');
- 		const phrase3 = new Phrase('Two peas in a pod');
- 		const phrase4 = new Phrase('Cool as a cucumber');
- 		const phrase5 = new Phrase('All bark and no bite');
-         
-        phrases.push(phrase1, phrase2, phrase3, phrase4, phrase5);
- 		return phrases;
+        const phraseStrings = [
+            'A fish out of water',
+            'Silence is golden',
+            'Two peas in a pod',
+            'Cool as a cucumber',
+            'All bark and no bite'
+        ];
+
+        const phrasesArray = phraseStrings.map(string => new Phrase(string));
+ 		return phrasesArray;
     };
 
     // Randomly selects a phrase from the phrases array.
@@ -81,11 +82,7 @@ Game.js
     // @return {boolean} - true if game was won / false if game was lost
     checkForWin() {
         const hiddenLetters = document.querySelectorAll('li.hide');
-        if(hiddenLetters.length === 0) {
-            return true;
-        } else {
-            return false;
-        };
+        return hiddenLetters.length === 0;
     };
 
     // Displays game over message and resets gameboard between games.

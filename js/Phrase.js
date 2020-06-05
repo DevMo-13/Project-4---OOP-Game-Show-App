@@ -34,12 +34,9 @@ Phrase.js
 
     // Checks to see if the letter selected by the player matches a letter in the phrase.
     // @param {string} letter - letter to check
+    // @return {boolean} - true if the phrase includes the letter / false if not
     checkLetter(letter) {
-        if(this.phrase.includes(letter)) {
-            return true;
-        } else {
-            return false;
-        };
+        return this.phrase.includes(letter);
     };
 
     // Reveals the letter(s) on the board that matches the player's selection.
