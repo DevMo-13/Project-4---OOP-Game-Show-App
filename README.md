@@ -3,6 +3,8 @@
 
 This project uses JavaScript and OOP (Object-Oriented Programming) to create a browser-based, word guessing game: "Phrase Hunter." The game selects a random, hidden phrase, which a player then tries to guess.
 
+Live link to the project can be found here: https://devmo-13.github.io/project-4---oop-game-show-app/.
+
 ---
 
 Game Rules:
