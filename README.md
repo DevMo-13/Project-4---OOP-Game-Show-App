@@ -3,7 +3,7 @@
 
 Browser-based word guessing game: Phrase Hunter.
 
-Live link to the project can be found here: https://devmo-13.github.io/oop-game-show-app/.
+###### Live link to the project can be found here: https://devmo-13.github.io/oop-game-show-app/.
 
 ---
 
